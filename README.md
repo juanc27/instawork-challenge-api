@@ -8,7 +8,13 @@
 - pip install -r requirements.txt
 
 ## Setup
-- python manage.py migrate
+- ./manage.py migrate
 
 ## Run the server
-- python manage.py runserver
+- ./manage.py runserver
+
+## Development
+### Creating a module migration
+- modify models.py
+- ./manage.py makemigrations <module>
+- ./manage.py migrate <module>
