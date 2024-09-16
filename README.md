@@ -8,13 +8,20 @@
 - pip install -r requirements.txt
 
 ## Setup
-- ./manage.py migrate
+- `./manage.py migrate`
 
 ## Run the server
-- ./manage.py runserver
+- `./manage.py runserver`
+
+## Test
+- Go to http://localhost:8000/members/ in your browser to access the API documentation
+- Use curl or postman GET/POST/PATCH/DELETE http://localhost:8000/members/
+
+## Run unit tests
+- `./manage.py test`
 
 ## Development
 ### Creating a module migration
 - modify models.py
-- ./manage.py makemigrations <module>
-- ./manage.py migrate <module>
+- `./manage.py makemigrations members`
+- `./manage.py migrate`
