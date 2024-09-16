@@ -12,7 +12,7 @@ class Member(models.Model):
     first_name = models.CharField(max_length=255, validators=[MinLengthValidator(1)])
     last_name = models.CharField(max_length=255, validators=[MinLengthValidator(1)])
     email = models.EmailField(max_length=255, unique=True)
-    phone = models.CharField(max_length=15, unique=True, validators=[RegexValidator(r'^\+?\d{10,15}$', 'Enter a valid phone number: only numbers and + signs, no hyphens.')])
+    phone = models.CharField(max_length=15, unique=True, validators=[RegexValidator(r'^\+?\d{10,15}$', 'Enter a valid phone number: min 10 chars, only numbers and +sign allowed, no hyphens.')])
     role = models.CharField(max_length=255, choices=VALID_ROLES, validators=[MinLengthValidator(1)])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
