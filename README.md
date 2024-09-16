@@ -14,8 +14,9 @@
 - `./manage.py runserver`
 
 ## Test
-- Go to http://localhost:8000/members/ in your browser to access the API documentation
-- Use curl or postman GET/POST/PATCH/DELETE http://localhost:8000/members/
+- Go to http://localhost:8000/members/ in your browser to access the API documentation,
+- Use curl or postman GET/POST/PATCH/DELETE http://localhost:8000/members/, or
+- Use the [Web UI app]((https://github.com/juanc27/instawork-challenge-ui))
 
 ## Run unit tests
 - `./manage.py test`
